@@ -1,18 +1,23 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "power.c"
+#include "resource.h"
 
-#define size 5
-int pow_int(int base, int pow);
+
+
+//int pow_int(int base, int pow);
+//int binaryseach(int *ptr, int data);
+
 int main(void)
 {
     int i;
-
+    int arr[size];
     printf("Hello hell!\n");
     for(i = 0; i < size; i++)
     {
-        printf(" pow(%d, 2) = %d\n", i, pow_int(i, 2));
+        arr[i] = pow_int(i, 2);
+        //printf(" pow(%d, 2) = %d\n", i, pow_int(i, 2));
     }
+    printf("binarysearch(arr[size], 64) = %d\n", binarysearch(arr, 64));
     printf("\n");
     return 0;
 }
