@@ -11,7 +11,7 @@ int main(void)
 {
     int i;
     int arr[size];
-    printf("Hello hell!\n");
+    printf("Hello bitch!\n");
     for(i = 0; i < size; i++)
     {
         arr[i] = pow_int(i, 2);
