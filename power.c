@@ -1,15 +1,11 @@
-//int base的pow次方，用recursive
-int pow_int(int base, int pow)
+int pow_int(int base, int power)
 {
-    int data;
-    if(pow == 0)
+    if(power == 0)
     {
-        data = 1;
+        return 1;
     }
     else
     {
-        data = base * pow_int(base, (pow - 1));
+        return base * pow_int(base, power-1);
     }
-
-    return data;
 }
